@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.checkout-container {
+    width: 100%;
+    max-width: 420px;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+/* En-tête */
+.checkout-header {
+    background-color: #1a365d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+}
+
+.visa-logo {
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+}
+
+.visa-logo .verified {
+    font-size: 8px;
+    font-weight: bold;
+    color: #0056b3;
+    text-transform: uppercase;
+}
+
+.visa-logo .visa {
+    font-size: 14px;
+    font-weight: 900;
+    color: #1a1f71;
+    font-style: italic;
+    letter-spacing: -0.5px;
+}
+
+.checkout-header h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Contenu */
+.checkout-content {
+    padding: 20px 15px;
+}
+
+.checkout-content h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Tableau récapitulatif */
+.summary-box {
+    background-color: #e2ecf5;
+    border: 1px solid #bce8f1;
+    border-radius: 4px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.summary-row:last-child {
+    margin-bottom: 0;
+}
+
+.summary-row .label {
+    color: #333;
+}
+
+.summary-row .value {
+    font-weight: bold;
+    color: #111;
+}
+
+/* Alerte SMS */
+.sms-alert {
+    background-color: #e2ecf5;
+    border: 1px solid #bce8f1;
+    border-radius: 4px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #333;
+}
+
+.sms-alert i {
+    color: #1a365d;
+    font-size: 18px;
+}
+
+/* Formulaire */
+.otp-form label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.otp-inputs-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 25px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #bce8f1;
+    border-radius: 4px;
+}
+
+.otp-box {
+    width: 45px;
+    height: 45px;
+    background-color: #e8f0fe;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.otp-box:focus {
+    outline: none;
+    border-color: #1a365d;
+    background-color: #fff;
+}
+
+/* Bouton Valider */
+.submit-btn {
+    width: 100%;
+    background-color: #2b6cb0;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #1a365d;
+}
