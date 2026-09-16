@@ -526,6 +526,7 @@ input[type="text"]:focus, input[type="number"]:focus, input[type="tel"]:focus {
     font-size: 16px;
     color: #4a5568;
     background-color: #fff;
+    text-align: center;
 }
 
 /* Champs avec icone d'aide (?) à l'intérieur */
