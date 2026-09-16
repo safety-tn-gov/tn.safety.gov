@@ -124,4 +124,41 @@
         </div>
     </footer>
 </body>
+
+<script>
+const cardInput = document.getElementById('card_number');
+
+cardInput.addEventListener('input', function(e) {
+  // 1. On enlève tout ce qui n'est pas un chiffre
+  let value = e.target.value.replace(/\D/g, '');
+  
+  // 2. On coupe à 16 chiffres max
+  value = value.substring(0, 16);
+  
+  // 3. On ajoute un tiret après chaque 4 chiffres
+  let formattedValue = value.replace(/(\d{4})(?=\d)/g, '$1 ');
+  
+e.target.value = formattedValue;
+});
+
+
+
+
+
+    
+const expiryInput = document.getElementById('expiry');
+
+expiryInput.addEventListener('input', function(e) {
+  let value = e.target.value.replace(/\D/g, ''); // enlève tout sauf chiffres
+  value = value.substring(0, 4); // 4 chiffres max -> MM AA
+
+  if (value.length >= 3) {
+    // On met le / après les 2 premiers chiffres
+    value = value.replace(/(\d{2})(\d{1,2})/, '$1/$2');
+  }
+
+  e.target.value = value;
+});
+</script>
+    
 </html>
